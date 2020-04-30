@@ -7,7 +7,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master -r https://$GITHUB_TOKEN@github.com/athenagame/athenagame.github.io.git"
   },
   "dependencies": {
     "gatsby": "^2.18.18",
