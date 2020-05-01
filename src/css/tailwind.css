@@ -7,6 +7,17 @@ a:hover {
   @apply text-primary-darker;
 }
 
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+body {
+  @apply font-sans;
+}
 @tailwind components;
 
 @tailwind utilities;
