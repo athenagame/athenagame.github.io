@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/en.js"],"names":[],"mappings":"2FAAA,mCAEe,4BAAM,YAAC,IAAD","file":"component---src-pages-en-js-5f7ed60efc564a51d489.js","sourcesContent":["import Index from '../components/Index';\n\nexport default () => <Index />;\n"],"sourceRoot":""}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/fa.js"],"names":[],"mappings":"2FAAA,mCAEe,4BAAM,YAAC,IAAD","file":"component---src-pages-fa-js-4c9d2547d8e59be23671.js","sourcesContent":["import Index from '../components/Index';\n\nexport default () => <Index />;\n"],"sourceRoot":""}
