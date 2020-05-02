@@ -1,24 +1,10 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { useStaticQuery } from 'gatsby';
 import LogoIcon from '../../svg/LogoIcon';
 import Button from '../Button';
 import t from '../../data/languages';
 
-const query = graphql`
-  query MyQuery {
-    site {
-      internal {
-        description
-      }
-    }
-  }
-`;
-
-const Header = () => {
-  const data = useStaticQuery(query);
-  const lang = 'fa';
-  console.log(data);
+const Header = ({ lang }) => {
   return (
     <header className="sticky top-0 bg-white shadow ltr">
       <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">

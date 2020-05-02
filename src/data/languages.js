@@ -10,5 +10,9 @@ module.exports = {
   usecases: {
     en: 'Usecases',
     fa: 'موارد استفاده'
+  },
+  headline: {
+    en: 'Game shows and everything',
+    fa: 'مسابقات'
   }
 };
