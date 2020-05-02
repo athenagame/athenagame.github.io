@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{fOoO:function(n,t,r){"use strict";r.r(t);r("91GP");var a=r("tsIV"),e=r("qKvR");function o(){return(o=Object.assign||function(n){for(var t=1;t<arguments.length;t++){var r=arguments[t];for(var a in r)Object.prototype.hasOwnProperty.call(r,a)&&(n[a]=r[a])}return n}).apply(this,arguments)}t.default=function(n){return Object(e.a)(a.a,o({},n,{lang:"en"}))}}}]);
+//# sourceMappingURL=component---src-pages-en-js-8eb4d7c36d0ce5e45780.js.map
