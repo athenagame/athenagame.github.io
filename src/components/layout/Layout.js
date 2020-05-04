@@ -15,7 +15,7 @@ const Layout = ({ children, lang }) => {
       </Helmet>
       <Header lang={lang} />
 
-      <main className="text-gray-900 rtl">{children}</main>
+      <main className={`text-gray-900 ${lang === 'fa' ? 'rtl' : 'ltr'}`}>{children}</main>
       <Footer lang={lang} />
     </>
   );

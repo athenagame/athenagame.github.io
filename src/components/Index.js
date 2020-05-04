@@ -16,21 +16,15 @@ import t from '../data/languages';
 const useStyles = createUseStyles({
   '@keyframes fadeIn': {
     from: { opacity: 0, visibility: 'hidden' },
-    to: { opacity: 1, visibility: 'visible' }
+    to: { opacity: 0.7, visibility: 'visible' }
   },
   '@keyframes fadeInLeftIllustration': {
-    '0%': { opacity: 0, transform: 'scale(0.95) translate3d(-40px, 10px, 0)' }
+    '0%': { opacity: 0, transform: 'scale(0.95) translate3d(-40px, 10px, 0)' },
+    '100%': { opacity: 0.7 }
   },
   '@keyframes fadeInLeftMedia': {
     '0%': { opacity: 0, transform: 'scale(0.8) translate3d(-40px, 10px, 0)' },
     '30%': { opacity: 1 }
-  },
-  '@keyframes rotatieMedia': {
-    '100%': {
-      opacity: 1
-      // transform:
-      //   'perspective(1000px) rotateY(10deg) rotateX(0deg) rotateZ(-3deg) scaleY(1) translatex(2%)'
-    }
   },
   headerImage: {
     animation: '$fadeIn 1s both cubic-bezier(0.3, 0, 0.2, 1)'
@@ -50,7 +44,8 @@ const useStyles = createUseStyles({
 
     zIndex: -200,
     position: 'absolute',
-    left: '0%',
+    left: isRtl => isRtl && '0%',
+    right: isRtl => !isRtl && '0%',
     width: '50%',
     top: '75px'
   },
@@ -70,28 +65,32 @@ const useStyles = createUseStyles({
   mainImage: {
     // transition: 'box-shadow 2s ease',
     transition: 'transform .5s cubic-bezier(0.3, 0, 0.2, 1)',
-    transform:
-      'perspective(1000px) rotateY(16deg) rotateX(2deg) rotateZ(-7deg) scaleY(0.95) translatex(2%)',
+    transform: isRtl =>
+      `perspective(1000px) rotateY(${isRtl ? '' : '-'}16deg) rotateX(2deg) rotateZ(${
+        isRtl ? '-' : ''
+      }7deg) scaleY(0.95) translatex(2%)`,
     // opacity: 0.2,
     '&:hover': {
       // animation: '$fadeIn 1s 0.2s cubic-bezier(0.3, 0, 0.2, 1)'
       transform:
-        'perspective(1000px) rotateY(10deg) rotateX(0deg) rotateZ(-3deg) scaleY(1) translatex(2%)'
+        'perspective(1000px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) scaleY(1) translatex(2%)'
     }
   }
 });
 
 export default ({ lang }) => {
-  const classes = useStyles();
+  const isRtl = lang === 'fa';
+
+  const classes = useStyles(isRtl);
   return (
     <Layout lang={lang}>
       <section>
         <div className={`container mx-auto px-8 lg:flex ${classes.imageHolder}`}>
           <div className={classes.image1Container}>
-            <img src="/header.svg" alt="Logo" style={{ transform: 'scaleX(-1)' }} />
+            <img src="/header.svg" alt="Logo" style={{ transform: isRtl && 'scaleX(-1)' }} />
           </div>
           <div className={classes.image2Container}>
-            <img src="/hero.svg" alt="Logo" style={{ transform: 'scaleX(-1)' }} />
+            <img src="/hero.svg" alt="Logo" style={{ transform: isRtl && 'scaleX(-1)' }} />
           </div>
         </div>
       </section>
@@ -99,14 +98,17 @@ export default ({ lang }) => {
       <section className="pt-20 md:pt-40">
         <div className="container mx-auto px-8 lg:flex">
           <div className="text-center lg:text-left lg:w-1/2">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none text-right">
+            <h1
+              className={`text-4xl lg:text-5xl xl:text-6xl font-bold leading-none ${isRtl &&
+                'text-right'}`}
+            >
               {t.headline[lang]}
             </h1>
-            <p className="text-xl lg:text-2xl mt-6 font-light text-right">
+            <p className="text-xl lg:text-2xl mt-6 font-light rtl:text-right ltr:text-left">
               Free landing page template to promote your business startup and generate leads for the
               offered services
             </p>
-            <p className="mt-8 md:mt-12">
+            <p className="mt-8 md:mt-12 rtl:text-right">
               <Button size="lg">Get Started</Button>
             </p>
             <p className="mt-4 text-gray-600">Sed fermentum felis ut cursu</p>
@@ -118,10 +120,10 @@ export default ({ lang }) => {
                 width: '450px',
                 // height: '230px',
                 backgroundColor: 'white',
-                boxShadow: '48px 16px 48px rgba(24,37,56,0.12)'
+                boxShadow: '10px 18px 56px -19px rgba(51,51,51,0.85)'
               }}
             >
-              <img src="/s1.png" alt="img" />
+              <img src="/s1.png" className="rounded" alt="img" />
             </div>
             {/* <HeroImage
               
@@ -129,26 +131,7 @@ export default ({ lang }) => {
           </div>
         </div>
       </section>
-      <section className="pt-20 md:pt-40">
-        <div className="container mx-auto px-8 lg:flex">
-          <div className="text-center lg:text-left lg:w-1/2">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none text-right">
-              {t.headline[lang]}
-            </h1>
-            <p className="text-xl lg:text-2xl mt-6 font-light text-right">
-              Free landing page template to promote your business startup and generate leads for the
-              offered services
-            </p>
-            <p className="mt-8 md:mt-12">
-              <Button size="lg">Get Started</Button>
-            </p>
-            <p className="mt-4 text-gray-600">Sed fermentum felis ut cursu</p>
-          </div>
-          <div className="lg:w-1/2">
-            <HeroImage />
-          </div>
-        </div>
-      </section>
+
       <section id="features" className="py-20 lg:pb-40 lg:pt-48">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl lg:text-5xl font-semibold">{t.features[lang]}</h2>

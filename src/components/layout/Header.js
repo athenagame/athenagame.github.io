@@ -6,7 +6,7 @@ import t from '../../data/languages';
 
 const Header = ({ lang }) => {
   return (
-    <header className="sticky top-0 bg-white shadow ltr z-50">
+    <header className={`sticky top-0 bg-white shadow ${lang === 'fa' ? 'rtl' : 'ltr'} z-50`}>
       <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
         <div className="flex items-center text-2xl">
           <div className="w-12 mr-3">
