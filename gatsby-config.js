@@ -6,6 +6,7 @@ module.exports = {
     languages
   },
   plugins: [
+    `gatsby-plugin-jss`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-theme-codebushi`,
