@@ -12,6 +12,7 @@ const Layout = ({ children, lang }) => {
           rel="stylesheet"
           type="text/css"
         />
+        <body dir={lang === 'fa' ? 'rtl' : 'ltr'} />
       </Helmet>
       <Header lang={lang} />
 
