@@ -23,5 +23,67 @@ module.exports = {
   usecases: {
     en: 'Usecases',
     fa: 'موارد استفاده'
-  }
+  },
+  featureList: [
+    {
+      title: {
+        en: 'title 1',
+        fa: 'قابلیت افزودن انواع سوالات'
+      },
+      description: {
+        en: 'desc 1',
+        fa: 'چند گزینه‌ای، متن، حدس تصویر، حدس موسیقی، کارت شانس و ...'
+      }
+    },
+    {
+      title: {
+        en: '',
+        fa: 'قابلیت تعریف تیم و امتیاز دهی'
+      },
+      description: {
+        en: 'desc 2',
+        fa: 'تعریف تیم با اسامی و رنگ‌های دلخواه'
+      }
+    },
+    {
+      title: {
+        en: 'title 3',
+        fa: ''
+      },
+      description: {
+        en: 'desc 3',
+        fa: ''
+      }
+    },
+    {
+      title: {
+        en: 'title 4',
+        fa: ''
+      },
+      description: {
+        en: 'desc 4',
+        fa: ''
+      }
+    },
+    {
+      title: {
+        en: 'title 5',
+        fa: ''
+      },
+      description: {
+        en: 'desc 5',
+        fa: ''
+      }
+    },
+    {
+      title: {
+        en: 'title 6',
+        fa: ''
+      },
+      description: {
+        en: 'desc 6',
+        fa: ''
+      }
+    }
+  ]
 };
