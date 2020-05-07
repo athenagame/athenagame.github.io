@@ -31,8 +31,8 @@ const Header = ({ lang }) => {
           <AnchorLink className="px-4" href="#features">
             {t.features[lang]}
           </AnchorLink>
-          <AnchorLink className="px-4" href="#services">
-            {t.services[lang]}
+          <AnchorLink className="px-4" href="#questions">
+            {t.questions[lang]}
           </AnchorLink>
           <AnchorLink className="px-4" href="#testimonials">
             {t.usecases[lang]}
@@ -40,9 +40,9 @@ const Header = ({ lang }) => {
         </div>
 
         <div className="hidden md:block">
-          <button type="button" className="text-primary rounded" style={{ margin: '0px 25px' }}>
+          {/* <button type="button" className="text-primary rounded" style={{ margin: '0px 25px' }}>
             {lang}
-          </button>
+          </button> */}
           <Button className="text-sm">Download</Button>
         </div>
       </div>

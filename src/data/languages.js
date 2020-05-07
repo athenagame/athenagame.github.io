@@ -16,9 +16,9 @@ module.exports = {
     en: 'Features',
     fa: 'امکانات'
   },
-  services: {
-    en: 'Services',
-    fa: 'خدمات'
+  questions: {
+    en: 'Questions',
+    fa: 'سوالات'
   },
   usecases: {
     en: 'Usecases',
@@ -28,7 +28,7 @@ module.exports = {
     {
       title: {
         en: 'title 1',
-        fa: 'افزودن انواع سوالات'
+        fa: 'پشتیبانی از انواع سوالات'
       },
       description: {
         en: 'desc 1',
@@ -48,7 +48,7 @@ module.exports = {
     {
       title: {
         en: 'title 3',
-        fa: 'سخصی‌سازی تم'
+        fa: 'شخصی‌سازی تم'
       },
       description: {
         en: 'desc 3',
@@ -72,17 +72,60 @@ module.exports = {
       },
       description: {
         en: 'desc 5',
-        fa: 'امکان تهییه‌ي نسخه‌ پشتیبان از محتوای مسابقه و بارگذاری مجدد آن'
+        fa: 'امکان تهیه‌ي نسخه‌ پشتیبان از محتوای مسابقه و بارگذاری مجدد آن'
       }
     },
     {
       title: {
         en: 'title 6',
-        fa: 'طراحی آسان'
+        fa: 'ویرایش آسان'
       },
       description: {
         en: 'desc 6',
         fa: 'افزودن آسان و ویرایش سریع سوالات از درون برنامه'
+      }
+    }
+  ],
+  questionList: [
+    {
+      title: {
+        en: 'Multi-Choice',
+        fa: 'چند‌گزینه‌ای'
+      },
+      description: {
+        en: 'desc 1',
+        fa:
+          'قابلیت اضافه کردن تصویر به سوال متنی، قابلیت تعریف چندین گزینه صحیح، امکان نمایش پاسخ تشریحی همراه با تصویر جواب و ...'
+      }
+    },
+    {
+      title: {
+        en: 'Picture Guess',
+        fa: 'حدس تصویر'
+      },
+      description: {
+        en: 'desc 2',
+        fa: 'امکان نمایش تصویر مات شده به عنوان سوال'
+      }
+    },
+    {
+      title: {
+        en: 'Music Guess',
+        fa: 'حدس موسیقی'
+      },
+      description: {
+        en: 'desc 2',
+        fa: ''
+      }
+    },
+    {
+      title: {
+        en: 'Flip Card',
+        fa: 'کارت شانس'
+      },
+      description: {
+        en: 'desc 2',
+        fa: 'تعریف تیم با اسامی و رنگ‌های دلخواه'
       }
     }
   ]

@@ -26,6 +26,10 @@ const useStyles = createUseStyles({
     '0%': { opacity: 0, transform: 'scale(0.8) translate3d(-40px, 10px, 0)' },
     '30%': { opacity: 1 }
   },
+  '@keyframes screenshotZoomIn': {
+    '0%': { transform: 'scale(0.5)' },
+    '100%': { transform: 'scale(1)' }
+  },
   headerImage: {
     animation: '$fadeIn 1s both cubic-bezier(0.3, 0, 0.2, 1)'
     // transition: 'box-shadow 2s ease',
@@ -51,6 +55,20 @@ const useStyles = createUseStyles({
     [`@media (min-width: 1024px)`]: {
       width: '50%',
       top: '75px'
+    }
+  },
+  screenshotAnimation: {
+    // margin: '35px',
+    // marginTop: '80px',
+    animation: '$screenshotZoomIn 1s 0.2s both cubic-bezier(0.3, 0, 0.2, 1)'
+  },
+  screenshot: {
+    transition: 'transform .4s cubic-bezier(0.3, 0, 0.2, 1)',
+    '&:hover': {
+      // animation: '$fadeIn 1s 0.2s cubic-bezier(0.3, 0, 0.2, 1)',
+      transform: 'scale(1.2)'
+      // transform:
+      //   'perspective(1000px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) scaleY(1) translatex(2%)'
     }
   },
   imageHolder: {
@@ -96,6 +114,8 @@ export default ({ lang }) => {
     '/loader.svg',
     '/tools.svg'
   ];
+  const { questionList } = t;
+  const questionScreenshots = ['/s1.png', '/s1.png', '/s1.png', '/s1.png', '/s1.png'];
 
   const classes = useStyles(isRtl);
   return (
@@ -150,7 +170,7 @@ export default ({ lang }) => {
         </div>
       </section>
 
-      <section id="features" className="py-20 lg:pb-40 lg:pt-48">
+      <section id="features" className="pt-32 lg:pb-0 lg:pt-48">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl lg:text-5xl font-semibold">{t.features[lang]}</h2>
           <div className="flex flex-wrap flex-col md:flex-row md:-mx-3 mt-12">
@@ -179,48 +199,47 @@ export default ({ lang }) => {
           </div>
         </div>
       </section>
-      <SplitSection
-        id="services"
-        primarySlot={
-          <div className="lg:pr-32 xl:pr-48">
-            <h3 className="text-3xl font-semibold leading-tight">Market Analysis</h3>
-            <p className="mt-8 text-xl font-light leading-relaxed">
-              Our team of enthusiastic marketers will analyse and evaluate how your company stacks
-              against the closest competitors
-            </p>
-          </div>
-        }
-        secondarySlot={<SvgCharts />}
-      />
-      <SplitSection
-        reverseOrder
-        primarySlot={
-          <div className="lg:pl-32 xl:pl-48">
-            <h3 className="text-3xl font-semibold leading-tight">
-              Design And Plan Your Business Growth Steps
-            </h3>
-            <p className="mt-8 text-xl font-light leading-relaxed">
-              Once the market analysis process is completed our staff will search for opportunities
-              that are in reach
-            </p>
-          </div>
-        }
-        secondarySlot={<SvgCharts />}
-      />
-      <SplitSection
-        primarySlot={
-          <div className="lg:pr-32 xl:pr-48">
-            <h3 className="text-3xl font-semibold leading-tight">
-              Search For Performance Optimization
-            </h3>
-            <p className="mt-8 text-xl font-light leading-relaxed">
-              With all the information in place you will be presented with an action plan that your
-              company needs to follow
-            </p>
-          </div>
-        }
-        secondarySlot={<SvgCharts />}
-      />
+      <section id="questions" className="pt-32 lg:pt-48">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl lg:text-5xl font-semibold">{t.questions[lang]}</h2>
+        </div>
+        {questionList.map((question, i) => {
+          return (
+            <SplitSection
+              key={question[lang]}
+              reverseOrder={i % 2}
+              primarySlot={
+                <div className="lg:pl-32 xl:pl-48">
+                  <h3 className="text-3xl font-semibold leading-tight">{question.title[lang]}</h3>
+                  <p className="mt-8 text-xl font-light leading-relaxed">
+                    {question.description[lang]}
+                  </p>
+                </div>
+              }
+              secondarySlot={
+                <div className={cx(classes.screenshotAnimation, 'md:p-10')}>
+                  <div
+                    className={cx(classes.screenshot, 'rounded-lg')}
+                    style={{
+                      width: '100%',
+                      // height: '230px',
+                      margin: 'auto',
+                      backgroundColor: 'white',
+                      boxShadow: 'rgba(51, 51, 51, 0.85) 0px 0px 16px -2px'
+                    }}
+                  >
+                    <img src={questionScreenshots[i]} className="rounded-lg" alt="img" />
+                  </div>
+                  {/* <HeroImage
+              
+            /> */}
+                </div>
+              }
+            />
+          );
+        })}
+      </section>
+
       <section id="stats" className="py-20 lg:pt-32">
         <div className="container mx-auto text-center">
           <LabelText className="text-gray-600">Our customers get results</LabelText>
@@ -237,20 +256,7 @@ export default ({ lang }) => {
           </div>
         </div>
       </section>
-      <section id="testimonials" className="py-20 lg:py-40">
-        <div className="container mx-auto">
-          <LabelText className="mb-8 text-gray-600 text-center">
-            What customers are saying
-          </LabelText>
-          <div className="flex flex-col md:flex-row md:-mx-3">
-            {customerData.map(customer => (
-              <div key={customer.customerName} className="flex-1 px-3">
-                <CustomerCard customer={customer} />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
       <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
         <h3 className="text-5xl font-semibold">Ready to grow your business?</h3>
         <p className="mt-8 text-xl font-light">
