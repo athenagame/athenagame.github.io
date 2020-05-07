@@ -157,14 +157,14 @@ export default ({ lang }) => {
             {featureList.map((feature, i) => {
               return (
                 <div key={feature[lang]} className="px-3" style={{ flex: '1 1 33%' }}>
-                  <Card className="mb-4 flex-row flex md:flex-col md:justify-between items-center">
+                  <Card className="mb-4 p-4 md:p-6 flex-row flex md:flex-col md:justify-between items-center">
                     <img
                       src={featureIcons[i]}
                       alt="icon"
                       style={{ height: '130px' }}
-                      className="m-4 md:m-8"
+                      className="md:mb-6"
                     />
-                    <div className="p-6 pt-0 pb-2">
+                    <div className="px-6 md:px-0">
                       <p className="font-semibold text-xl  text-right md:text-center">
                         {feature.title[lang]}
                       </p>
