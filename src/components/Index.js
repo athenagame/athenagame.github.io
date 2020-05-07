@@ -88,6 +88,14 @@ const useStyles = createUseStyles({
 export default ({ lang }) => {
   const isRtl = lang === 'fa';
   const { featureList } = t;
+  const featureIcons = [
+    '/question.svg',
+    '/team.svg',
+    '/palette.svg',
+    '/projector.svg',
+    '/loader.svg',
+    '/tools.svg'
+  ];
 
   const classes = useStyles(isRtl);
   return (
@@ -145,13 +153,25 @@ export default ({ lang }) => {
       <section id="features" className="py-20 lg:pb-40 lg:pt-48">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl lg:text-5xl font-semibold">{t.features[lang]}</h2>
-          <div className="flex flex-wrap flex-col sm:flex-row sm:-mx-3 mt-12">
-            {featureList.map(feature => {
+          <div className="flex flex-wrap flex-col md:flex-row md:-mx-3 mt-12">
+            {featureList.map((feature, i) => {
               return (
                 <div key={feature[lang]} className="px-3" style={{ flex: '1 1 33%' }}>
-                  <Card className="mb-4">
-                    <p className="font-semibold text-xl">{feature.title[lang]}</p>
-                    <p className="mt-4">{feature.description[lang]}</p>
+                  <Card className="mb-4 flex-row flex md:flex-col md:justify-between items-center">
+                    <img
+                      src={featureIcons[i]}
+                      alt="icon"
+                      style={{ height: '130px' }}
+                      className="m-4 md:m-8"
+                    />
+                    <div className="p-6 pt-0 pb-2">
+                      <p className="font-semibold text-xl  text-right md:text-center">
+                        {feature.title[lang]}
+                      </p>
+                      <p className="mt-4 mb-3 text-right md:text-center">
+                        {feature.description[lang]}
+                      </p>
+                    </div>
                   </Card>
                 </div>
               );

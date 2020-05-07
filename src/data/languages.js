@@ -28,7 +28,7 @@ module.exports = {
     {
       title: {
         en: 'title 1',
-        fa: 'قابلیت افزودن انواع سوالات'
+        fa: 'افزودن انواع سوالات'
       },
       description: {
         en: 'desc 1',
@@ -38,7 +38,7 @@ module.exports = {
     {
       title: {
         en: '',
-        fa: 'قابلیت تعریف تیم و امتیاز دهی'
+        fa: 'تعریف تیم و امتیاز دهی'
       },
       description: {
         en: 'desc 2',
@@ -48,41 +48,41 @@ module.exports = {
     {
       title: {
         en: 'title 3',
-        fa: ''
+        fa: 'سخصی‌سازی تم'
       },
       description: {
         en: 'desc 3',
-        fa: ''
+        fa: 'امکان تغییر رنگ ها و تصاویر پس‌زمینه'
       }
     },
     {
       title: {
-        en: 'title 4',
-        fa: ''
+        en: '',
+        fa: 'تطبیق پذیر روی انواع صفحه نمایش'
       },
       description: {
         en: 'desc 4',
-        fa: ''
+        fa: 'قابلیت تغییر اندازه‌ی عناصر با توجه به اندازه صفحه نمایش'
       }
     },
     {
       title: {
         en: 'title 5',
-        fa: ''
+        fa: 'استخراج و بارگذاری مسابقه'
       },
       description: {
         en: 'desc 5',
-        fa: ''
+        fa: 'امکان تهییه‌ي نسخه‌ پشتیبان از محتوای مسابقه و بارگذاری مجدد آن'
       }
     },
     {
       title: {
         en: 'title 6',
-        fa: ''
+        fa: 'طراحی آسان'
       },
       description: {
         en: 'desc 6',
-        fa: ''
+        fa: 'افزودن آسان و ویرایش سریع سوالات از درون برنامه'
       }
     }
   ]
