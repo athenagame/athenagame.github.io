@@ -131,7 +131,7 @@ export default ({ lang }) => {
         </div>
       </section>
 
-      <section className="pt-8 md:pt-24">
+      <section className="pt-8 md:pt-24 md:mb-10">
         <div className="container mx-auto px-8 lg:flex">
           <div className="text-center lg:text-left lg:w-1/2">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl leading-tight font-normal leading-none rtl:text-right">
@@ -170,7 +170,7 @@ export default ({ lang }) => {
         </div>
       </section>
 
-      <section id="features" className="pt-32 lg:pb-0 lg:pt-48">
+      <section id="features" className="pt-32 lg:pb-0 md:pt-20 md:mb-10">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl lg:text-5xl font-semibold">{t.features[lang]}</h2>
           <div className="flex flex-wrap flex-col md:flex-row md:-mx-3 mt-12">
@@ -199,7 +199,7 @@ export default ({ lang }) => {
           </div>
         </div>
       </section>
-      <section id="questions" className="pt-32 lg:pt-48">
+      <section id="questions" className="pt-32 md:pt-20 md:mb-10">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl lg:text-5xl font-semibold">{t.questions[lang]}</h2>
         </div>

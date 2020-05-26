@@ -10,6 +10,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master -r https://$GITHUB_TOKEN@github.com/athenagame/athenagame.github.io.git"
   },
   "dependencies": {
+    "@material-ui/lab": "^4.0.0-alpha.53",
     "classnames": "^2.2.6",
     "gatsby": "^2.18.18",
     "gatsby-plugin-jss": "^2.3.0",
@@ -21,6 +22,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
     "react-jss": "^10.1.1",
+    "react-timer-hook": "^2.0.2",
     "tailwindcss-dir": "^4.0.0"
   },
   "devDependencies": {
