@@ -10,15 +10,15 @@ module.exports = {
   secondaryHeadline: {
     en:
       'Best for presenting your own questions in a fully interactive and customizable way, on BIG SCREENS for different purposes and occasions.',
-    fa: 'مناسب برای ارائه سوال‌های خود در محیطی تعاملی و جذاب، بر روی ویدئو پروژکتور و صفحات بزرگ.'
+    fa: 'مناسب برای ارائه سوال‌های خود به صورت آفلاین در محیطی تعاملی و جذاب، بر روی ویدئو پروژکتور و صفحات بزرگ.'
   },
   features: {
     en: 'Features',
     fa: 'امکانات'
   },
   questions: {
-    en: 'Questions',
-    fa: 'سوالات'
+    en: '‌‌Be Creative',
+    fa: 'خلاق باشید'
   },
   usecases: {
     en: 'Usecases',
@@ -89,33 +89,32 @@ module.exports = {
   questionList: [
     {
       title: {
-        en: 'Multi-Choice',
-        fa: 'چند‌گزینه‌ای'
+        en: 'Save and Share',
+        fa: 'ذخیره کنید و به اشتراک بگذارید'
       },
       description: {
-        en: 'desc 1',
-        fa:
-          'قابلیت اضافه کردن تصویر به سوال متنی، قابلیت تعریف چندین گزینه صحیح، امکان نمایش پاسخ تشریحی همراه با تصویر جواب و ...'
+        en: 'Save your games as a file, re-use it later or even send it to others.',
+        fa: 'مسابقه خود را برای استفاده مجدد در آینده ذخیره کنید و حتی برای دیگران بفرستید.'
       }
     },
     {
       title: {
-        en: 'Picture Guess',
-        fa: 'حدس تصویر'
+        en: 'Break the ice in events and parties',
+        fa: 'در دورهمی‌ها فضایی شاد ایجاد کنید'
       },
       description: {
-        en: 'desc 2',
-        fa: 'امکان نمایش تصویر مات شده به عنوان سوال'
+        en: 'Add fun game shows to any class, meeting, party or groups.',
+        fa: 'با ساختن مسابقات جذاب فضای هر کلاس، رویداد، مهمانی و دورهمی را هیجان‌انگیزتر کنید.'
       }
     },
     {
       title: {
-        en: 'Music Guess',
-        fa: 'حدس موسیقی'
+        en: 'Gamify learning',
+        fa: 'یادگیری را به بازی تبدیل کنید'
       },
       description: {
-        en: 'desc 2',
-        fa: ''
+        en: 'Use game shows to improve morale, bring stronger attention, increase participation and lower stress while learning',
+        fa: 'با استفاده از مسابقات در روند یادگیری دقت فردی و روحیه جمعی با بالا ببرید و آموزش را آسانتر کنید.'
       }
     },
     {

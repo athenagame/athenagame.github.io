@@ -176,7 +176,11 @@ export default ({ lang }) => {
           <div className="flex flex-wrap flex-col md:flex-row md:-mx-3 mt-12">
             {featureList.map((feature, i) => {
               return (
-                <div key={feature[lang]} className="px-3" style={{ flex: '1 1 33%' }}>
+                <div
+                  key={feature[lang]}
+                  className="px-3"
+                  style={{ flex: '1 1 33%', background: 'white' }}
+                >
                   <Card className="mb-4 p-4 md:p-6 flex-row flex md:flex-col md:justify-between items-center">
                     <img
                       src={featureIcons[i]}
@@ -185,7 +189,7 @@ export default ({ lang }) => {
                       className="md:mb-6"
                     />
                     <div className="px-6 md:px-0">
-                      <p className="font-semibold text-xl  text-right md:text-center">
+                      <p className="font-semibold text-2xl  text-right md:text-center">
                         {feature.title[lang]}
                       </p>
                       <p className="mt-4 mb-3 text-right md:text-center">
@@ -238,23 +242,6 @@ export default ({ lang }) => {
             />
           );
         })}
-      </section>
-
-      <section id="stats" className="py-20 lg:pt-32">
-        <div className="container mx-auto text-center">
-          <LabelText className="text-gray-600">Our customers get results</LabelText>
-          <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
-            <div className="w-full sm:w-1/3">
-              <StatsBox primaryText="+100%" secondaryText="Stats Information" />
-            </div>
-            <div className="w-full sm:w-1/3">
-              <StatsBox primaryText="+100%" secondaryText="Stats Information" />
-            </div>
-            <div className="w-full sm:w-1/3">
-              <StatsBox primaryText="+100%" secondaryText="Stats Information" />
-            </div>
-          </div>
-        </div>
       </section>
 
       <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
