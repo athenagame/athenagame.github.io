@@ -117,5 +117,13 @@ module.exports = {
         fa: 'با ساختن مسابقات جذاب فضای هر کلاس، رویداد، مهمانی و دورهمی را هیجان‌انگیزتر کنید.'
       }
     },
-  ]
+  ],
+  buyline: {
+    en: 'Buy a one time license for your PC and use Athena as much as you want.',
+    fa: 'با یک بار خرید آتنا می‌توانید همیشه از آن استفاده کنید.'
+  },
+  getStarted: {
+    en: 'Get started now!',
+    fa: 'دریافت'
+  }
 };

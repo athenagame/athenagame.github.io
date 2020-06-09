@@ -245,11 +245,9 @@ export default ({ lang }) => {
       </section>
 
       <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
-        <p className="mt-8 text-xl font-light">
-          Buy a one time license for your PC and use Athena as much as you want.
-        </p>
+        <p className="mt-8 text-xl font-light">{t.buyline[lang]}</p>
         <p className="mt-8">
-          <Button size="xl">Get Started Now</Button>
+          <Button size="xl">{t.getStarted[lang]}</Button>
         </p>
       </section>
     </Layout>
