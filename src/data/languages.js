@@ -4,13 +4,13 @@ module.exports = {
     fa: 'مسابقه‌ساز آتنا'
   },
   headline: {
-    en: 'Create entertaining intellectual game shows with Athena',
+    en: 'Create entertaining TV style game shows with Athena',
     fa: 'با آتنا مسابقات سرگرم‌کننده و آموزشی بسازید'
   },
   secondaryHeadline: {
     en:
-      'Best for presenting your own questions in a fully interactive and customizable way, on BIG SCREENS for different purposes and occasions.',
-    fa: 'مناسب برای ارائه سوال‌های خود به صورت آفلاین در محیطی تعاملی و جذاب، بر روی ویدئو پروژکتور و صفحات بزرگ.'
+      'Best for presenting your own game show questions offline in a fully interactive and customizable way, on BIG SCREENS for different events and occasions.',
+    fa: 'مناسب برای ارائه سوال‌های مسابقه به صورت آفلاین در محیطی تعاملی و جذاب، بر روی تلویزیون، ویدئو پروژکتور و صفحات بزرگ.'
   },
   features: {
     en: 'Features',
@@ -27,86 +27,66 @@ module.exports = {
   featureList: [
     {
       title: {
-        en: 'title 1',
+        en: 'Many question types',
         fa: 'پشتیبانی از انواع سوالات'
       },
       description: {
-        en: 'desc 1',
+        en: 'Multiple choice, guess picures and music, flip cards, etc.',
         fa: 'چند گزینه‌ای، متن، حدس تصویر، حدس موسیقی، کارت شانس و ...'
       }
     },
     {
       title: {
-        en: '',
-        fa: 'تعریف تیم و امتیاز دهی'
+        en: 'Teams and Scores',
+        fa: 'تعریف تیم و امتیازدهی'
       },
       description: {
-        en: 'desc 2',
-        fa: 'تعریف تیم با اسامی و رنگ‌های دلخواه'
+        en: 'Define team names and their colors. See scores in real time.',
+        fa: 'تعریف تیم با اسامی و رنگ‌های دلخواه  و دیدن امتیازات به صورت لحظه‌ای'
       }
     },
     {
       title: {
-        en: 'title 3',
-        fa: 'شخصی‌سازی تم'
+        en: 'Fully customizable',
+        fa: 'شخصی‌سازی'
       },
       description: {
-        en: 'desc 3',
-        fa: 'امکان تغییر رنگ ها و تصاویر پس‌زمینه'
+        en: 'Change all colors, backgrounds, logos, timers and sounds.',
+        fa: 'امکان تغییر رنگ ها و تصاویر پس‌زمینه، لوگو، صداها و غیره.'
       }
     },
     {
       title: {
-        en: '',
-        fa: 'تطبیق پذیر روی انواع صفحه نمایش'
+        en: 'Responsive design',
+        fa: 'تطبیق‌پذیری رابطه کاربری '
       },
       description: {
-        en: 'desc 4',
-        fa: 'قابلیت تغییر اندازه‌ی عناصر با توجه به اندازه صفحه نمایش'
+        en: 'Fonts and pictures resize automatically to match all screen sizes.',
+        fa: 'قابلیت تغییر اندازه‌ی خودکار عناصر با توجه به اندازه صفحه'
       }
     },
     {
       title: {
-        en: 'title 5',
+        en: 'Save and load',
         fa: 'استخراج و بارگذاری مسابقه'
       },
       description: {
-        en: 'desc 5',
+        en: 'Save your game as a file for backup or later use',
         fa: 'امکان تهیه‌ي نسخه‌ پشتیبان از محتوای مسابقه و بارگذاری مجدد آن'
       }
     },
     {
       title: {
-        en: 'title 6',
+        en: 'Edit easily',
         fa: 'ویرایش آسان'
       },
       description: {
-        en: 'desc 6',
+        en: 'Easily add and edit questions of different types from inside the app.',
         fa: 'افزودن آسان و ویرایش سریع سوالات از درون برنامه'
       }
     }
   ],
   questionList: [
-    {
-      title: {
-        en: 'Save and Share',
-        fa: 'ذخیره کنید و به اشتراک بگذارید'
-      },
-      description: {
-        en: 'Save your games as a file, re-use it later or even send it to others.',
-        fa: 'مسابقه خود را برای استفاده مجدد در آینده ذخیره کنید و حتی برای دیگران بفرستید.'
-      }
-    },
-    {
-      title: {
-        en: 'Break the ice in events and parties',
-        fa: 'در دورهمی‌ها فضایی شاد ایجاد کنید'
-      },
-      description: {
-        en: 'Add fun game shows to any class, meeting, party or groups.',
-        fa: 'با ساختن مسابقات جذاب فضای هر کلاس، رویداد، مهمانی و دورهمی را هیجان‌انگیزتر کنید.'
-      }
-    },
     {
       title: {
         en: 'Gamify learning',
@@ -119,13 +99,23 @@ module.exports = {
     },
     {
       title: {
-        en: 'Flip Card',
-        fa: 'کارت شانس'
+        en: 'Save and share',
+        fa: 'ذخیره کنید و به اشتراک بگذارید'
       },
       description: {
-        en: 'desc 2',
-        fa: 'تعریف تیم با اسامی و رنگ‌های دلخواه'
+        en: 'Save your games as a file, re-use it later or even send it to others.',
+        fa: 'مسابقه خود را برای استفاده مجدد در آینده ذخیره کنید و حتی برای دیگران بفرستید.'
       }
-    }
+    },
+    {
+      title: {
+        en: 'Break the ice',
+        fa: 'در دورهمی‌ها فضایی شاد ایجاد کنید'
+      },
+      description: {
+        en: 'Add fun TV style game shows to any event, class, meeting, party or groups.',
+        fa: 'با ساختن مسابقات جذاب فضای هر کلاس، رویداد، مهمانی و دورهمی را هیجان‌انگیزتر کنید.'
+      }
+    },
   ]
 };

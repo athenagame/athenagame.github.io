@@ -34,9 +34,6 @@ const Header = ({ lang }) => {
           <AnchorLink className="px-4" href="#questions">
             {t.questions[lang]}
           </AnchorLink>
-          <AnchorLink className="px-4" href="#testimonials">
-            {t.usecases[lang]}
-          </AnchorLink>
         </div>
 
         <div className="hidden md:block">
