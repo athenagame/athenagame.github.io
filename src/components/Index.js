@@ -3,14 +3,8 @@ import { createUseStyles } from 'react-jss';
 import cx from 'classnames';
 import Button from './Button';
 import Card from './Card';
-import CustomerCard from './CustomerCard';
-import LabelText from './LabelText';
 import Layout from './layout/Layout';
 import SplitSection from './SplitSection';
-import StatsBox from './StatsBox';
-import customerData from '../data/customer-data';
-import HeroImage from '../svg/HeroImage';
-import SvgCharts from '../svg/SvgCharts';
 import t from '../data/languages';
 
 const useStyles = createUseStyles({
@@ -159,7 +153,7 @@ export default ({ lang }) => {
               }}
             >
               <video autoPlay loop muted playsinline className="rounded-lg">
-                <source src="peek2.mp4" />
+                <source src="/peek2.mp4" />
               </video>
             </div>
             {/* <HeroImage
