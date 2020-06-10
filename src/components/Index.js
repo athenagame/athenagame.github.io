@@ -158,7 +158,9 @@ export default ({ lang }) => {
                 boxShadow: '10px 18px 56px -19px rgba(51,51,51,0.85)'
               }}
             >
-              <img src="/s1.png" className="rounded-lg abso" alt="img" />
+              <video autoPlay loop muted playsinline className="rounded-lg">
+                <source src="peek2.mp4" />
+              </video>
             </div>
             {/* <HeroImage
               
