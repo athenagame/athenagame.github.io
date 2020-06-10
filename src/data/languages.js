@@ -103,8 +103,8 @@ module.exports = {
         fa: 'ذخیره کنید و به اشتراک بگذارید'
       },
       description: {
-        en: 'Save your games as a file, re-use it later or even send it to others.',
-        fa: 'مسابقه خود را برای استفاده مجدد در آینده ذخیره کنید و حتی برای دیگران بفرستید.'
+        en: 'Fully customize you game show, choose your colors and backgrounds and save it all as a file. Re-use it later or even send it to others.',
+        fa: 'مسابقه خود را با رنگ‌ها و تصاویر پس‌زمینه خودتان سفارشی کنید و در یک فایل ذخیره کنید تا در آینده دوباره استفاده کنید یا حتی برای دیگران بفرستید.'
       }
     },
     {

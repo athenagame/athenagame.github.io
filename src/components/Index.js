@@ -115,7 +115,7 @@ export default ({ lang }) => {
     '/tools.svg'
   ];
   const { questionList } = t;
-  const questionScreenshots = ['/s1.png', '/s1.png', '/s1.png', '/s1.png', '/s1.png'];
+  const questionScreenshots = ['/flip.mp4', '/custom2.mp4', '/music.mp4'];
 
   const classes = useStyles(isRtl);
   return (
@@ -234,7 +234,16 @@ export default ({ lang }) => {
                       boxShadow: 'rgba(51, 51, 51, 0.85) 0px 0px 16px -2px'
                     }}
                   >
-                    <img src={questionScreenshots[i]} className="rounded-lg" alt="img" />
+                    <video
+                      className="rounded-lg"
+                      autoPlay
+                      loop
+                      muted
+                      playsinline
+                      className="rounded-lg"
+                    >
+                      <source src={questionScreenshots[i]} />
+                    </video>
                   </div>
                   {/* <HeroImage
               
