@@ -10,7 +10,8 @@ module.exports = {
   secondaryHeadline: {
     en:
       'Best for presenting your own game show questions offline in a fully interactive and customizable way, on BIG SCREENS for different events and occasions.',
-    fa: 'مناسب برای ارائه سوال‌های مسابقه به صورت آفلاین در محیطی تعاملی و جذاب، بر روی تلویزیون، ویدئو پروژکتور و صفحات بزرگ.'
+    fa:
+      'مناسب برای ارائه سوال‌های مسابقه به صورت آفلاین در محیطی تعاملی و جذاب، بر روی تلویزیون، ویدئو پروژکتور و صفحات بزرگ.'
   },
   features: {
     en: 'Features',
@@ -93,8 +94,10 @@ module.exports = {
         fa: 'یادگیری را به بازی تبدیل کنید'
       },
       description: {
-        en: 'Use game shows to improve morale, bring stronger attention, increase participation and lower stress while learning',
-        fa: 'با استفاده از مسابقات در روند یادگیری دقت فردی و روحیه جمعی با بالا ببرید و آموزش را آسانتر کنید.'
+        en:
+          'Use game shows to improve morale, bring stronger attention, increase participation and lower stress while learning',
+        fa:
+          'با استفاده از مسابقات در روند یادگیری دقت فردی و روحیه جمعی با بالا ببرید و آموزش را آسانتر کنید.'
       }
     },
     {
@@ -103,8 +106,10 @@ module.exports = {
         fa: 'ذخیره کنید و به اشتراک بگذارید'
       },
       description: {
-        en: 'Fully customize you game show, choose your colors and backgrounds and save it all as a file. Re-use it later or even send it to others.',
-        fa: 'مسابقه خود را با رنگ‌ها و تصاویر پس‌زمینه خودتان سفارشی کنید و در یک فایل ذخیره کنید تا در آینده دوباره استفاده کنید یا حتی برای دیگران بفرستید.'
+        en:
+          'Fully customize you game show, choose your colors and backgrounds and save it all as a file. Re-use it later or even send it to others.',
+        fa:
+          'مسابقه خود را با رنگ‌ها و تصاویر پس‌زمینه خودتان سفارشی کنید و در یک فایل ذخیره کنید تا در آینده دوباره استفاده کنید یا حتی برای دیگران بفرستید.'
       }
     },
     {
@@ -116,7 +121,7 @@ module.exports = {
         en: 'Add fun TV style game shows to any event, class, meeting, party or groups.',
         fa: 'با ساختن مسابقات جذاب فضای هر کلاس، رویداد، مهمانی و دورهمی را هیجان‌انگیزتر کنید.'
       }
-    },
+    }
   ],
   buyline: {
     en: 'Buy a one time license for your PC and use Athena as much as you want.',
@@ -125,5 +130,12 @@ module.exports = {
   getStarted: {
     en: 'Get started now!',
     fa: 'دریافت'
+  },
+  aboutUs: {
+    en: 'About Us',
+    fa: 'درباره ما'
+  },
+  aboutText: {
+    en: 'By Raffi Dilanchian, Samim Pezeshki'
   }
 };
