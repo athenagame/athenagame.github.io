@@ -136,6 +136,23 @@ module.exports = {
     fa: 'درباره ما'
   },
   aboutText: {
-    en: 'By Raffi Dilanchian, Samim Pezeshki'
+    en: 'By Raffi Dilanchian, Samim Pezeshki',
+    fa: 'By Raffi Dilanchian, Samim Pezeshki'
+  },
+  email: {
+    en: 'Please let us contact you with detailed information',
+    fa: 'لطفا برای اطلاعات بیشتر ایمیل خود را وارد نمایید:'
+  },
+  emailText: {
+    en: 'Contact me',
+    fa: 'با من تماس بگیرید'
+  },
+  emailSent: {
+    en: 'Thanks! We will contact you shortly',
+    fa: 'به زودی با شما تماس خواهیم گرفت.'
+  },
+  yourEmail: {
+    en: 'Your email',
+    fa: 'ایمیل شما'
   }
 };

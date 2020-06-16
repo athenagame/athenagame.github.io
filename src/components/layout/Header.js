@@ -40,7 +40,11 @@ const Header = ({ lang }) => {
           {/* <button type="button" className="text-primary rounded" style={{ margin: '0px 25px' }}>
             {lang}
           </button> */}
-          <Button className="text-sm">Download</Button>
+          <Button className="text-sm">
+            <AnchorLink href="#download" className="text-white hover:text-white">
+              Download
+            </AnchorLink>
+          </Button>
         </div>
       </div>
     </header>
