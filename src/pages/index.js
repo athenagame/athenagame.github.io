@@ -1,3 +1,3 @@
 import Index from '../components/Index';
 
-export default props => <Index {...props} lang="fa" />;
+export default props => <Index {...props} lang="en" />;
