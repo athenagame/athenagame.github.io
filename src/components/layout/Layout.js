@@ -33,7 +33,7 @@ const Layout = ({ children, lang }) => {
           "@context": "https://schema.org",
           "@type": "Organization",
           "url": "https://athenagameshow.github.io",
-          "name": "Athena Game Show Maker",
+          "name": "Athena Game Show Maker"
         }
       `}
         </script>
