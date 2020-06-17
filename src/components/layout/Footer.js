@@ -6,7 +6,9 @@ const Footer = ({ lang }) => (
     <div className="flex -mx-3">
       <div className="flex-1 px-3">
         <h2 className="text-lg font-semibold">{t.aboutUs[lang]}</h2>
-        <p className="mt-5">{t.aboutText[lang]}</p>
+        <a href="https://github.com/psamim/">Samim Pezeshki</a>
+        <br />
+        <a href="https://github.com/raffidil/">Raffi Dilanchian</a>
       </div>
     </div>
   </footer>
