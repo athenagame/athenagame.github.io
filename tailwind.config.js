@@ -29,7 +29,8 @@ module.exports = {
     }
   },
   variants: {
-    textAlign: ['responsive', 'direction']
+    textAlign: ['responsive', 'direction'],
+    fontWeight: ['responsive', 'direction']
   },
   plugins: [require('tailwindcss-dir')()]
 };
