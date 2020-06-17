@@ -194,10 +194,10 @@ export default ({ lang }) => {
                       className="md:mb-6"
                     />
                     <div className="px-6 md:px-0">
-                      <p className="font-semibold text-2xl  text-right md:text-center balsamiq">
+                      <p className="font-semibold text-2xl  rtl:text-right md:text-center balsamiq">
                         {feature.title[lang]}
                       </p>
-                      <p className="mt-4 mb-3 text-right md:text-center">
+                      <p className="mt-4 mb-3 rtl:text-right md:text-center">
                         {feature.description[lang]}
                       </p>
                     </div>
