@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { createUseStyles } from 'react-jss';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import cx from 'classnames';
 import Button from './Button';
 import Card from './Card';
@@ -166,7 +167,11 @@ export default ({ lang }) => {
           </div>
         </div>
         <div className="flex justify-center px-8 mt-12 md:hidden ">
-          <Button className="text-sm rtl:text-right">Download</Button>
+          <Button className="text-sm rtl:text-right">
+            <AnchorLink href="#download" className="text-white hover:text-white">
+              Download
+            </AnchorLink>
+          </Button>
         </div>
       </section>
 
@@ -270,8 +275,8 @@ export default ({ lang }) => {
           method="post"
           style={{ display: isEmailSent ? 'none' : 'block' }}
         >
-          <p className="mt-8 text-xl font-light">{t.email[lang]}</p>
-          <div className="flex px-24">
+          <p className="m-8 text-xl font-light">{t.email[lang]}</p>
+          <div className="flex px-2 md:px-24">
             <svg
               className="w-10 h-10 text-orange-500 fill-current"
               xmlns="http://www.w3.org/2000/svg"
@@ -291,6 +296,7 @@ export default ({ lang }) => {
               type="email"
               name="entry.1055300465"
               className="border-l border-t border-b border-gray-200 rounded w-full text-base md:text-lg px-3 py-2 mx-2"
+              style={{ marginLeft: 16 }}
               placeholder={t.yourEmail[lang]}
             />
           </div>
