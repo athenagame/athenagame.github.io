@@ -154,5 +154,9 @@ module.exports = {
   yourEmail: {
     en: 'Your email',
     fa: 'ایمیل شما'
+  },
+  changeLanguage: {
+    en: 'فارسی',
+    fa: 'English'
   }
 };

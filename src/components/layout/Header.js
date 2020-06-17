@@ -39,11 +39,12 @@ const Header = ({ lang }) => {
           {/* <button type="button" className="text-primary rounded" style={{ margin: '0px 25px' }}>
             {lang}
           </button> */}
-          <Button className="text-sm">
-            <AnchorLink href="#download" className="text-white hover:text-white">
-              Download
-            </AnchorLink>
-          </Button>
+          <a
+            href={lang === 'fa' ? 'en' : 'fa'}
+            className="text-teal p-2 border-teal-500 border rounded"
+          >
+            {t.changeLanguage[lang]}
+          </a>
         </div>
       </div>
     </header>
