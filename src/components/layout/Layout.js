@@ -12,6 +12,10 @@ const Layout = ({ children, lang }) => {
           rel="stylesheet"
           type="text/css"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Montserrat&display=swap"
+          rel="stylesheet"
+        />
         <body dir={lang === 'fa' ? 'rtl' : 'ltr'} />
       </Helmet>
       <Header lang={lang} />

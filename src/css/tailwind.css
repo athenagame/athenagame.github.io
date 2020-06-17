@@ -21,3 +21,8 @@ body {
 @tailwind components;
 
 @tailwind utilities;
+
+.balsamiq {
+  font-family: 'Balsamiq Sans', Shabnam;
+  font-weight: normal;
+}

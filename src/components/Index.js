@@ -133,7 +133,7 @@ export default ({ lang }) => {
       <section className="pt-8 md:pt-24 md:mb-10">
         <div className="container mx-auto px-8 lg:flex">
           <div className="text-center lg:text-left lg:w-1/2">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl leading-tight font-normal leading-none rtl:text-right">
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl leading-tight font-normal leading-none rtl:text-right balsamiq">
               {t.headline[lang]}
             </h1>
             <p
@@ -177,7 +177,7 @@ export default ({ lang }) => {
 
       <section id="features" className="pt-32 lg:pb-0 md:pt-20 md:mb-10">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl lg:text-5xl font-semibold">{t.features[lang]}</h2>
+          <h2 className="text-3xl lg:text-5xl font-semibold balsamiq">{t.features[lang]}</h2>
           <div className="flex flex-wrap flex-col md:flex-row md:-mx-3 mt-12">
             {featureList.map((feature, i) => {
               return (
@@ -194,7 +194,7 @@ export default ({ lang }) => {
                       className="md:mb-6"
                     />
                     <div className="px-6 md:px-0">
-                      <p className="font-semibold text-2xl  text-right md:text-center">
+                      <p className="font-semibold text-2xl  text-right md:text-center balsamiq">
                         {feature.title[lang]}
                       </p>
                       <p className="mt-4 mb-3 text-right md:text-center">
@@ -210,7 +210,7 @@ export default ({ lang }) => {
       </section>
       <section id="questions" className="pt-32 md:pt-20 md:mb-10">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl lg:text-5xl font-semibold">{t.questions[lang]}</h2>
+          <h2 className="text-3xl lg:text-5xl font-semibold balsamiq">{t.questions[lang]}</h2>
         </div>
         {questionList.map((question, i) => {
           return (
@@ -219,7 +219,9 @@ export default ({ lang }) => {
               reverseOrder={i % 2}
               primarySlot={
                 <div className="lg:pl-32 xl:pl-48">
-                  <h3 className="text-3xl font-semibold leading-tight">{question.title[lang]}</h3>
+                  <h3 className="text-3xl font-semibold leading-tight balsamiq">
+                    {question.title[lang]}
+                  </h3>
                   <p className="mt-8 text-xl font-light leading-relaxed">
                     {question.description[lang]}
                   </p>
