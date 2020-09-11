@@ -87,6 +87,18 @@ const SEO = ({ title, description, image, article }) => {
       `}
       </script>
 
+      <script type="application/ld+json">
+        {`
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "${seo.title}",
+      "operatingSystem": "Windows 7, Windows, Windows 10, Windows 8, Linux, OSX",
+      "applicationCategory": "EducationalApplication",
+    }
+          `}
+      </script>
+
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
