@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import { createUseStyles } from 'react-jss';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import cx from 'classnames';
 import Button from './Button';
 import Card from './Card';
@@ -131,13 +130,13 @@ export default ({ lang }) => {
       </section>
 
       <section className="pt-8 md:pt-24 md:mb-10">
-        <div className="container mx-auto px-8 lg:flex">
+        <div className="container px-8 mx-auto lg:flex">
           <div className="text-center lg:text-left lg:w-1/2">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl leading-tight font-normal leading-none rtl:text-right balsamiq">
+            <h1 className="text-4xl font-normal leading-none leading-tight lg:text-5xl xl:text-6xl rtl:text-right balsamiq">
               {t.headline[lang]}
             </h1>
             <p
-              className="text-xl lg:text-2xl mt-6 font-light rtl:text-right"
+              className="mt-6 text-xl font-light lg:text-2xl rtl:text-right"
               style={{
                 boxShadow: '0px 0px 60px 11px rgba(255,255,255,1)',
                 backgroundColor: '#ffffffa6'
@@ -178,7 +177,7 @@ export default ({ lang }) => {
       <section id="features" className="pt-32 lg:pb-0 md:pt-20 md:mb-10">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl lg:text-5xl balsamiq rtl:font-semibold">{t.features[lang]}</h2>
-          <div className="flex flex-wrap flex-col md:flex-row md:-mx-3 mt-12">
+          <div className="flex flex-col flex-wrap mt-12 md:flex-row md:-mx-3">
             {featureList.map((feature, i) => {
               return (
                 <div
@@ -186,7 +185,7 @@ export default ({ lang }) => {
                   className="px-3"
                   style={{ flex: '1 1 33%', background: 'white' }}
                 >
-                  <Card className="mb-4 p-4 md:p-6 flex-row flex md:flex-col md:justify-between items-center">
+                  <Card className="flex flex-row items-center p-4 mb-4 md:p-6 md:flex-col md:justify-between">
                     <img
                       src={featureIcons[i]}
                       alt="icon"
@@ -194,7 +193,7 @@ export default ({ lang }) => {
                       className="md:mb-6"
                     />
                     <div className="px-6 md:px-0">
-                      <p className="rtl:font-semibold text-2xl  rtl:text-right md:text-center balsamiq">
+                      <p className="text-2xl rtl:font-semibold rtl:text-right md:text-center balsamiq">
                         {feature.title[lang]}
                       </p>
                       <p className="mt-4 mb-3 rtl:text-right md:text-center">
@@ -219,7 +218,7 @@ export default ({ lang }) => {
               reverseOrder={i % 2}
               primarySlot={
                 <div className="lg:pl-32 xl:pl-48">
-                  <h3 className="text-3xl rtl:font-semibold leading-tight balsamiq">
+                  <h3 className="text-3xl leading-tight rtl:font-semibold balsamiq">
                     {question.title[lang]}
                   </h3>
                   <p className="mt-8 text-xl font-light leading-relaxed">
@@ -255,7 +254,7 @@ export default ({ lang }) => {
 
       {/* 
 
-      <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
+      <section className="container py-24 mx-auto my-20 text-center bg-gray-200 rounded-lg">
         <p className="mt-8 text-xl font-light">{t.buyline[lang]}</p>
         <p className="mt-8">
           <Button size="xl">{t.getStarted[lang]}</Button>
@@ -268,7 +267,7 @@ export default ({ lang }) => {
 
       <section
         id="download"
-        className="container mx-auto my-20 py-10 bg-gray-200 rounded-lg text-center "
+        className="container py-10 mx-auto my-20 text-center bg-gray-200 rounded-lg "
       >
         <form
           ref={formRef}
@@ -297,7 +296,7 @@ export default ({ lang }) => {
             <input
               type="email"
               name="entry.1055300465"
-              className="border-l border-t border-b border-gray-200 rounded w-full text-base md:text-lg px-3 py-2 mx-2"
+              className="w-full px-3 py-2 mx-2 text-base border-t border-b border-l border-gray-200 rounded md:text-lg"
               style={{ marginLeft: 16 }}
               placeholder={t.yourEmail[lang]}
             />
