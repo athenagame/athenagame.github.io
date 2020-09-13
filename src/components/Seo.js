@@ -78,17 +78,6 @@ const SEO = ({ title, description, image, article }) => {
 
       <script type="application/ld+json">
         {`
-        {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "url": "${seo.url}",
-          "name": "${seo.title}"
-        }
-      `}
-      </script>
-
-      <script type="application/ld+json">
-        {`
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
