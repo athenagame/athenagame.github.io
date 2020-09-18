@@ -83,7 +83,7 @@ const SEO = ({ title, description, image, article }) => {
       "@type": "SoftwareApplication",
       "name": "${seo.title}",
       "operatingSystem": "Windows 7, Windows, Windows 10, Windows 8, Linux, OSX",
-      "applicationCategory": "EducationalApplication",
+      "applicationCategory": "EducationalApplication"
     }
           `}
       </script>
