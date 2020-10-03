@@ -158,5 +158,13 @@ module.exports = {
   changeLanguage: {
     en: 'فارسی',
     fa: 'English'
+  },
+  download: {
+    en: 'Download now!',
+    fa: 'دانلود رایگان'
+  },
+  downloadDescription: {
+    en: 'For Windows 7, 8 and 10',
+    fa: 'Windows 7, 8, 10'
   }
 };

@@ -144,6 +144,21 @@ export default ({ lang }) => {
             >
               {t.secondaryHeadline[lang]}
             </p>
+
+            <a href="https://files.athenagameshow.com/Athena/5bc9a5ba5aa996bd132d67a13d4fbd95/latest/win32/x64/Athena.exe">
+              <Button
+                size="xl"
+                className="flex mt-10 text-3xl font-extrabold tracking-wider uppercase ltr:tracking-tighter"
+                type="submit"
+                onClick={() => {
+                  setIsEmailSent(true);
+                  formRef.current.submit();
+                }}
+              >
+                {t.download[lang]}
+              </Button>
+            </a>
+            <div className="p-1 rtl:text-right">{t.downloadDescription[lang]}</div>
           </div>
           <div className={cx(classes.mainImageAnimation, 'lg:w-1/2')}>
             <div
