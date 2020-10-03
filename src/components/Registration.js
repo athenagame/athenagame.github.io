@@ -10,7 +10,7 @@ export default ({ lang }) => {
 
   return (
     <Layout lang={lang}>
-      <iframe name="hidden_iframe" id="hidden_iframe" style={{ display: 'none' }} />
+      <iframe title="email" name="hidden_iframe" id="hidden_iframe" style={{ display: 'none' }} />
 
       <section
         id="download"

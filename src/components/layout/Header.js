@@ -20,19 +20,21 @@ const Header = ({ lang }) => {
   return (
     <header className={`sticky top-0 bg-white shadow ${lang === 'fa' ? 'rtl' : 'ltr'} z-50`}>
       <div className="container flex flex-col items-center justify-between px-8 py-4 mx-auto sm:flex-row">
-        <div className="flex items-center text-2xl">
-          <div className="w-12 mr-3">
-            <img src="/logo.svg" alt="logo" />
+        <a href={lang === 'fa' ? '/fa' : '/en'}>
+          <div className="flex items-center text-2xl">
+            <div className="w-12 mr-3">
+              <img src="/logo.svg" alt="logo" />
+            </div>
+            <div
+              className={cx(
+                classes.title,
+                'text-base rtl:text-3xl ltr:font-semibold rtl:font-medium lg:text-3xl'
+              )}
+            >
+              {t.headerTitle[lang]}
+            </div>
           </div>
-          <div
-            className={cx(
-              classes.title,
-              'text-base rtl:text-3xl ltr:font-semibold rtl:font-medium lg:text-3xl'
-            )}
-          >
-            {t.headerTitle[lang]}
-          </div>
-        </div>
+        </a>
         <div className="flex items-center justify-center w-full mt-4 sm:w-2/5 md:mt-0">
           <AnchorLink className="px-4" href="#features">
             {t.features[lang]}

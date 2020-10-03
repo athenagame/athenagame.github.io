@@ -208,10 +208,10 @@ export default ({ lang }) => {
                       className="md:mb-6"
                     />
                     <div className="px-6 md:px-0">
-                      <p className="text-2xl rtl:font-semibold rtl:text-right md:text-center balsamiq">
+                      <p className="text-2xl text-left rtl:font-semibold rtl:text-right md:rtl:text-center md:text-center balsamiq">
                         {feature.title[lang]}
                       </p>
-                      <p className="mt-4 mb-3 rtl:text-right md:text-center">
+                      <p className="mt-4 mb-3 text-left rtl:text-right md:rtl:text-center md:text-center">
                         {feature.description[lang]}
                       </p>
                     </div>
