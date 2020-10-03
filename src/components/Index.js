@@ -45,7 +45,7 @@ const useStyles = createUseStyles({
     left: isRtl => isRtl && '0%',
     right: isRtl => !isRtl && '0%',
     width: '80%',
-    top: '255px',
+    top: '470px',
     [`@media (min-width: 1024px)`]: {
       width: '50%',
       top: '75px'
@@ -148,7 +148,7 @@ export default ({ lang }) => {
             <a href="https://files.athenagameshow.com/Athena/5bc9a5ba5aa996bd132d67a13d4fbd95/latest/win32/x64/Athena.exe">
               <Button
                 size="xl"
-                className="flex mt-10 text-3xl font-extrabold tracking-wider uppercase ltr:tracking-tighter"
+                className="flex mt-10 text-3xl font-extrabold tracking-wider uppercase rtl:mt-16 ltr:tracking-tighter"
                 type="submit"
                 onClick={() => {
                   setIsEmailSent(true);
