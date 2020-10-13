@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/index.js"],"names":["props","lang"],"mappings":"uVAEe,mBAAAA,GAAK,OAAI,YAAC,IAAD,KAAWA,EAAX,CAAkBC,KAAK","file":"component---src-pages-index-js-17647db629f0c350877d.js","sourcesContent":["import Index from '../components/Index';\n\nexport default props => <Index {...props} lang=\"en\" />;\n"],"sourceRoot":""}

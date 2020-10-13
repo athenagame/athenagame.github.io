@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/fa.js"],"names":["props","lang"],"mappings":"uVAEe,mBAAAA,GAAK,OAAI,YAAC,IAAD,KAAWA,EAAX,CAAkBC,KAAK","file":"component---src-pages-fa-js-36fa645c4aad39146b07.js","sourcesContent":["import Index from '../components/Index';\n\nexport default props => <Index {...props} lang=\"fa\" />;\n"],"sourceRoot":""}
