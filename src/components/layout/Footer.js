@@ -11,7 +11,11 @@ const Footer = ({ lang }) => (
         </a>
         <br />
         <a href="mailto:contact@athenagameshow.com">
-          <i className="fontello-icon icon-mail">&#xe800;</i> contact@athenagameshow.com
+          <i className="fontello-icon icon-mail">&#x2709;</i> contact@athenagameshow.com
+        </a>
+        <br />
+        <a href="https://www.linkedin.com/showcase/athena-game-show-maker/">
+          <i className="fontello-icon icon-linkedin">&#xf0e1;</i> Athena Game Show Maker
         </a>
         <br />
         <a href="https://www.twitter.com/AthenaGameShow/">
