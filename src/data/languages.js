@@ -166,5 +166,9 @@ module.exports = {
   downloadDescription: {
     en: 'For Windows 7, 8 and 10',
     fa: 'Windows 7, 8, 10'
+  },
+  win7helper: {
+    en: 'Make sure your Windows 7 is up to date',
+    fa: 'از به‌روز بودن ویندوز ۷ خود اطمینان حاصل فرمایید'
   }
 };

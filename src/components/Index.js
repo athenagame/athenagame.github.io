@@ -116,6 +116,8 @@ export default ({ lang }) => {
 
   const formRef = useRef();
 
+  const isWindowsSeven = window.navigator.userAgent.toLowerCase().includes('windows nt 6.1');
+
   return (
     <Layout lang={lang}>
       <section>
@@ -144,7 +146,6 @@ export default ({ lang }) => {
             >
               {t.secondaryHeadline[lang]}
             </p>
-
             <a href="https://files.athenagameshow.com/Athena/5bc9a5ba5aa996bd132d67a13d4fbd95/latest/win32/x64/Athena.exe">
               <Button
                 size="xl"
@@ -159,6 +160,24 @@ export default ({ lang }) => {
               </Button>
             </a>
             <div className="p-1 rtl:text-right">{t.downloadDescription[lang]}</div>
+            {isWindowsSeven && (
+              <div className="p-1 rtl:text-right flex-row flex items-center ">
+                <img
+                  src="/info.svg"
+                  alt="i"
+                  style={{ width: '25px', height: '25px', margin: '0 8px', opacity: 0.7 }}
+                />
+                <div className="p-1 rtl:text-right" style={{ color: '#888888' }}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4457144"
+                  >
+                    {t.win7helper[lang]}
+                  </a>
+                </div>
+              </div>
+            )}
           </div>
           <div className={cx(classes.mainImageAnimation, 'lg:w-1/2')}>
             <div
