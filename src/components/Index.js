@@ -7,6 +7,18 @@ import Layout from './layout/Layout';
 import SplitSection from './SplitSection';
 import t from '../data/languages';
 
+const useDeviceDetect = () => {
+  const [isWinSeven, setWinSeven] = React.useState(false);
+
+  React.useEffect(() => {
+    const userAgent = typeof window.navigator === 'undefined' ? '' : navigator.userAgent;
+    const winSeven = Boolean(userAgent.toLowerCase().includes('windows nt 6.1'));
+    setWinSeven(winSeven);
+  }, []);
+
+  return { isWinSeven };
+};
+
 const useStyles = createUseStyles({
   '@keyframes fadeIn': {
     from: { opacity: 0, visibility: 'hidden' },
@@ -116,7 +128,7 @@ export default ({ lang }) => {
 
   const formRef = useRef();
 
-  const isWindowsSeven = window.navigator.userAgent.toLowerCase().includes('windows nt 6.1');
+  const { isWinSeven } = useDeviceDetect();
 
   return (
     <Layout lang={lang}>
@@ -160,7 +172,7 @@ export default ({ lang }) => {
               </Button>
             </a>
             <div className="p-1 rtl:text-right">{t.downloadDescription[lang]}</div>
-            {isWindowsSeven && (
+            {isWinSeven && (
               <div className="p-1 rtl:text-right flex-row flex items-center ">
                 <img
                   src="/info.svg"
