@@ -107,7 +107,7 @@ module.exports = {
       },
       description: {
         en:
-          'Fully customize you game show, choose your colors and backgrounds and save it all as a file. Re-use it later or even send it to others.',
+          'Fully customize your game show, choose your colors and backgrounds and save it all as a file. Re-use it later or even send it to others.',
         fa:
           'مسابقه خود را با رنگ‌ها و تصاویر پس‌زمینه خودتان سفارشی کنید و در یک فایل ذخیره کنید تا در آینده دوباره استفاده کنید یا حتی برای دیگران بفرستید.'
       }
