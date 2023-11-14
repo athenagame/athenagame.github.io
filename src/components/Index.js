@@ -145,7 +145,7 @@ export default ({ lang }) => {
               {t.secondaryHeadline[lang]}
             </p>
 
-            <a href="https://files.athenagameshow.com/Athena/5bc9a5ba5aa996bd132d67a13d4fbd95/latest/win32/x64/Athena.exe">
+            <a href="https://github.com/athenagame/athenagame.github.io/releases/download/0.9.12/Athena.exe">
               <Button
                 size="xl"
                 className="flex mt-10 text-3xl font-extrabold tracking-wider uppercase rtl:mt-16 ltr:tracking-tighter"
