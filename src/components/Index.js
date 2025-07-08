@@ -7,6 +7,18 @@ import Layout from './layout/Layout';
 import SplitSection from './SplitSection';
 import t from '../data/languages';
 
+const useDeviceDetect = () => {
+  const [isWinSeven, setWinSeven] = React.useState(false);
+
+  React.useEffect(() => {
+    const userAgent = typeof window.navigator === 'undefined' ? '' : navigator.userAgent;
+    const winSeven = Boolean(userAgent.toLowerCase().includes('windows nt 6.1'));
+    setWinSeven(winSeven);
+  }, []);
+
+  return { isWinSeven };
+};
+
 const useStyles = createUseStyles({
   '@keyframes fadeIn': {
     from: { opacity: 0, visibility: 'hidden' },
@@ -85,7 +97,8 @@ const useStyles = createUseStyles({
 
     transition: 'transform .5s cubic-bezier(0.3, 0, 0.2, 1)',
     transform: isRtl =>
-      `perspective(1000px) rotateY(${isRtl ? '' : '-'}16deg) rotateX(2deg) rotateZ(${isRtl ? '-' : ''
+      `perspective(1000px) rotateY(${isRtl ? '' : '-'}16deg) rotateX(2deg) rotateZ(${
+        isRtl ? '-' : ''
       }7deg) scaleY(0.95) translatex(2%)`,
     // opacity: 0.2,
     '&:hover': {
@@ -115,6 +128,8 @@ export default ({ lang }) => {
 
   const formRef = useRef();
 
+  const { isWinSeven } = useDeviceDetect();
+
   return (
     <Layout lang={lang}>
       <section>
@@ -143,7 +158,6 @@ export default ({ lang }) => {
             >
               {t.secondaryHeadline[lang]}
             </p>
-
             <a href="https://github.com/athenagame/athenagame.github.io/releases/download/0.9.12/Athena.exe">
               <Button
                 size="xl"
@@ -158,6 +172,24 @@ export default ({ lang }) => {
               </Button>
             </a>
             <div className="p-1 rtl:text-right">{t.downloadDescription[lang]}</div>
+            {isWinSeven && (
+              <div className="p-1 rtl:text-right flex-row flex items-center ">
+                <img
+                  src="/info.svg"
+                  alt="i"
+                  style={{ width: '25px', height: '25px', margin: '0 8px', opacity: 0.7 }}
+                />
+                <div className="p-1 rtl:text-right" style={{ color: '#888888' }}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.catalog.update.microsoft.com/Search.aspx?q=KB4457144"
+                  >
+                    {t.win7helper[lang]}
+                  </a>
+                </div>
+              </div>
+            )}
           </div>
           <div className={cx(classes.mainImageAnimation, 'lg:w-1/2')}>
             <div

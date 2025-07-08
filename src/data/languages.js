@@ -107,7 +107,7 @@ module.exports = {
       },
       description: {
         en:
-          'Fully customize you game show, choose your colors and backgrounds and save it all as a file. Re-use it later or even send it to others.',
+          'Fully customize your game show, choose your colors and backgrounds and save it all as a file. Re-use it later or even send it to others.',
         fa:
           'مسابقه خود را با رنگ‌ها و تصاویر پس‌زمینه خودتان سفارشی کنید و در یک فایل ذخیره کنید تا در آینده دوباره استفاده کنید یا حتی برای دیگران بفرستید.'
       }
@@ -166,5 +166,9 @@ module.exports = {
   downloadDescription: {
     en: 'For Windows 7, 8 and 10',
     fa: 'Windows 7, 8, 10'
+  },
+  win7helper: {
+    en: 'Make sure your Windows 7 is up to date',
+    fa: 'از به‌روز بودن ویندوز ۷ خود اطمینان حاصل فرمایید'
   }
 };
