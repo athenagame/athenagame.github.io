@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
-      - run: npm ci
+      - run: npm ci --legacy-peer-deps
       - run: git config user.email "psamim@gmail.com"
       - run: git config user.name "Samim Pezeshki"
       - run: npm run deploy
