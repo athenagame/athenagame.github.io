@@ -6,20 +6,16 @@ const Footer = ({ lang }) => (
     <div className="flex -mx-3">
       <div className="flex-1 px-3">
         <h2 className="text-lg font-semibold">{t.aboutUs[lang]}</h2>
-        <a href="https://www.instagram.com/athenagameshow/">
-          <i className="fontello-icon icon-instagram">&#xf16d;</i> AthenaGameShow
-        </a>
-        <br />
         <a href="mailto:contact@athenagameshow.com">
           <i className="fontello-icon icon-mail">&#x2709;</i> contact@athenagameshow.com
         </a>
         <br />
-        <a href="https://www.linkedin.com/showcase/athena-game-show-maker/">
-          <i className="fontello-icon icon-linkedin">&#xf0e1;</i> Athena Game Show Maker
+        <a href="https://www.instagram.com/athenagameshow/">
+          <i className="fontello-icon icon-instagram">&#xf16d;</i> AthenaGameShow
         </a>
         <br />
-        <a href="https://www.twitter.com/AthenaGameShow/">
-          <i className="fontello-icon icon-twitter">&#xf099;</i> AthenaGameShow
+        <a href="https://www.linkedin.com/showcase/athena-game-show-maker/">
+          <i className="fontello-icon icon-linkedin">&#xf0e1;</i> Athena Game Show Maker
         </a>
         <br />
         <a href="https://www.github.com/raffidil/">
